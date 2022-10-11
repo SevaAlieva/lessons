@@ -30,6 +30,7 @@ console.log("hello" / 123);
 console.log(NaN + 5);
 console.log(NaN ** 0);
 // исключение, в результате выдает 1
+console.log ("123" + 123);
 
 // BigInt
 let bigi = 1234567n;
@@ -77,10 +78,37 @@ typeof x
 
 str1 = false
 
-console.log(typeof (nuller));
-console.log(typeof dotCheck);
-console.log(typeof ("something"));
-console.log(typeof (str1));
+// console.log(typeof (nuller));
+// console.log(typeof (dotCheck));
+// console.log(typeof ("something"));
+// console.log(typeof (str1));
 
-document.getElementById("one").innerHTML = "BTS"
+// document.getElementById("one").innerHTML = "CIRCUS"
+// document.getElementById("one").innerHTML = 1234
+// document.getElementById("one").innerHTML = '<h1>Stay</h1>'
+
+// document.querySelector(".black").innerHTML = '<b>BLACK</b>';
+
+let inputIN = document.querySelector(".text-in");
+let button = document.querySelector(".check-in");
+let div = document.querySelector(".result");
+
+button.onclick = function() {
+    // кнопка будет нажата
+    console.log("да")
+
+    // console.log(inputIN.value);
+    
+    // let e = inputIN.value; //строка по умолчанию
+    let e = +inputIN.value; //перевод в число
+
+    console.log(e)
+
+    let h = e + 15;
+    console.log(h);
+    
+    // div.innerHTML = h;
+}
+
+
 
